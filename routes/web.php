@@ -3,6 +3,11 @@
 use App\Http\Controllers\UserImportController;
 use App\Http\Controllers\ChunkUploadController;
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
 Route::get('/upload-test', function () {
     return view('chunk-upload');
 });
