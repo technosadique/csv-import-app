@@ -5,6 +5,7 @@ use App\Http\Controllers\ChunkUploadController;
 
 Route::get('/', function () {
     return view('welcome');
+    //return view('welcome_plain');
 });
 
 

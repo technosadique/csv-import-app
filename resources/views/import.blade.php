@@ -23,6 +23,32 @@
         </div>
         <button type="submit" class="btn btn-primary">Import</button>
     </form>
+	
+	<table class="table table-bordered table-striped mt-2">
+		 <tr>
+		 <th>Id </th>				 
+		 <th>Title</th>				 
+		 <th>Price</th>					
+		 </tr>
+		@php $r=1; @endphp
+		@forelse($users as $row)
+		 <tr>				 
+		 <td>{{ $r++; }}</td>
+		 <td>{{ $row->name }}</td>	
+		 <td>{{ $row->email }}</td>			
+		 </tr>
+		 @empty 
+		 <tr><td colspan="3" class="text-center">No records found.</td></tr>
+		 
+		 
+		 @endforelse				 
+	</table>
+	
+	
+	
+	
+	
+	
 </div>
 
 </body>
