@@ -27,7 +27,7 @@
 	<table class="table table-bordered table-striped mt-2">
 		 <tr>
 		 <th>#</th>				 
-		 <th>Title</th>				 
+		 <th>Name</th>				 
 		 <th>Email</th>					
 		 </tr>
 		@php $r=1; @endphp
@@ -38,17 +38,9 @@
 		 <td>{{ $row->email }}</td>			
 		 </tr>
 		 @empty 
-		 <tr><td colspan="3" class="text-center">No records found.</td></tr>
-		 
-		 
+		 <tr><td colspan="3" class="text-center">No records found.</td></tr>		 
 		 @endforelse				 
-	</table>
-	
-	
-	
-	
-	
-	
+	</table>	
 </div>
 
 </body>
