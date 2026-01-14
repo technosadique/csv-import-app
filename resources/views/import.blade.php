@@ -26,9 +26,9 @@
 	
 	<table class="table table-bordered table-striped mt-2">
 		 <tr>
-		 <th>Id </th>				 
+		 <th>#</th>				 
 		 <th>Title</th>				 
-		 <th>Price</th>					
+		 <th>Email</th>					
 		 </tr>
 		@php $r=1; @endphp
 		@forelse($users as $row)

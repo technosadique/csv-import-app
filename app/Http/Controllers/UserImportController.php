@@ -2,7 +2,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 
 class UserImportController extends Controller
@@ -60,7 +59,7 @@ class UserImportController extends Controller
 				$existing->save();
 				$updated++;
 			} else {
-				User::create(['name' => $name, 'email' => $email, 'password'=>bcrypt('123456')]);
+				User::create(['name' => $name, 'email' => $email]);
 				$imported++;
 			}
 		}
